@@ -9,7 +9,7 @@ async function createPost(req, res, next) {
     });
     await post.save();
     res.status(200).json({ success: true });
-    global.io.broadcast.emit(
+    global.io.emit(
       "new_post",
       `Some one faced a new problem with postId: ${post._id}`
     );
