@@ -44,7 +44,7 @@ const postRouter = require("./routers/postRouter");
 
 app.use("/post", postRouter);
 
-server.listen(8080, () => {
+server.listen(process.env.PORT || 8080, () => {
   console.log("Server Start");
 });
 
