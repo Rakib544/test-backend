@@ -41,7 +41,6 @@ app.get("/", async (req, res) => {
 
 //
 const postRouter = require("./routers/postRouter");
-
 app.use("/post", postRouter);
 
 server.listen(process.env.PORT || 8080, () => {
