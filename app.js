@@ -47,5 +47,3 @@ app.use("/post", postRouter);
 server.listen(process.env.PORT || 8080, () => {
   console.log("Server Start");
 });
-
-// hello
